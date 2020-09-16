@@ -1,0 +1,19 @@
+#Physics 3926A Lab 1
+#By Philip Ceric
+print("One of the easiest to formulate, yet unsolved, problems in number theory is the Collatz Conjecture, sometimes called the “Hailstone Problem.”")
+print("Given a starting integer n, n >= 1, we iterate the following sequence:")
+print("n --> (n/2) if n is even")
+print("n --> (3n+1) if n is odd")
+print("The Collatz Conjecture is that for any n, this iterative sequence will end in 1 after a finite number of steps. This conjecture has defied all attempts at proof.")
+n = int(input('Enter n: '))
+
+    m=0
+    while n > 1:
+        if (n % 2):
+            n = n//2
+            m=m+1
+        else:
+            n = n*3 + 1
+            m=m+1
+
+print("Number of steps: ", m)
